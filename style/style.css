@@ -1,0 +1,490 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}/*---------------------------HERO-------------------*/
+.hero{
+    background: #bfc7d4;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content:center;
+    align-items:center;
+}
+/*----------------------CONTENEDOR PRINCIPAL-----------------*/
+.hero .container{
+    width: 1750px;
+    height: 900px;
+    display: grid;
+    grid-template-columns:360px auto;
+    grid-template-areas:"menu dashboard";
+}
+/*------------------MENU------------*/
+
+.hero .container .menu-container{
+    grid-area: menu;
+    background: #eeeeee;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius:40px;
+}
+
+.hero .container .menu-container .menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #ffffff;
+    height: 100%;
+    border-radius: 40px;
+    align-items: center;
+}
+
+
+/*---------------LOGO-------------*/
+.hero .container .menu-container .menu .logo{
+    height: 100px;
+    width: 100%;
+    margin-top:30px ;
+
+}
+
+.hero .container .menu-container .menu .logo img{
+    height: 100px;
+    width: 100px;
+    margin-left:30px;
+     cursor:pointer;
+}
+
+/*---------------ITEMS-MENU----------*/
+
+.hero .container .menu-container .menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 290px;
+    margin-top: 30px;
+
+}
+
+.hero .container .menu-container .menu ul li a{
+    color:gray;
+    display: flex;
+    align-items: center;
+    padding:20px;
+    text-decoration: none;
+    height: 14px;
+}
+
+.hero .container .menu-container .menu ul li a:hover{
+    border-radius: 20px;
+    color: #fff;
+    background-image: linear-gradient(to right,#0b9312 , #6ec202);
+
+}
+
+.hero .container .menu-container .menu ul li a span{
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.hero .container .menu-container .menu ul li a i{
+    font-size: 19px;
+}
+
+
+/*----------BANNER-------------*/
+
+.hero .container .menu-container .menu .banner{
+    display: flex;
+    width:280px;
+    height: 200px;
+    align-self: center;
+    justify-content: center;
+    margin-top:40px;
+    background: #f1f1f1;
+    border-top-left-radius: 20px;  
+    border-top-right-radius: 20px;   
+    cursor:pointer;
+}
+
+.hero .container .menu-container .menu .banner img{
+    width: 210px;
+    height: 210px;
+
+}
+
+.hero .container .menu-container .menu .view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    background: #f1f1f1;
+    height: 150px;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px;  
+    cursor:pointer ;     
+}
+
+.hero .container .menu-container .menu .view .cyber{
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.hero .container .menu-container .menu .view .offer{
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+}
+
+.hero .container .menu-container .menu .view .vista{
+    background-image: linear-gradient(to right,#0b9312 , #6ec202);
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    cursor: pointer;
+
+    
+}
+
+
+.hero .container .menu-container .menu .view .vista span{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+/*------------------DASHBOARD------------*/
+.hero .container .dashboard{
+    grid-area: dashboard;
+    width: 100%;
+    height: 100%;
+    background: #eeeeee;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-right-radius:40px ;
+    border-top-right-radius:40px ;
+}
+
+.hero .container .dashboard .search{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    margin-top: 25px;
+
+}
+
+.hero .container .dashboard .search .title{
+
+    width: 50%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+}
+
+.hero .container .dashboard .search span{
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.hero .container .dashboard .search .buscador{
+    height: 100%;
+    width: 35%;
+    display:flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.hero .container .dashboard .search .buscador input {
+    font-family: fontawesome;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    height: 30px;
+    align-items: center;
+    
+}
+
+.hero .container .dashboard .search .user {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero .container .dashboard .search .user i{
+    font-size: 25px;
+    color: gray;
+    cursor: pointer;
+}
+
+.hero .container .dashboard .search .user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:3px solid #6ac005;
+    cursor: pointer;
+}
+
+.hero .container .dashboard .titles{
+    width: 100%;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .container .dashboard .titles .news{
+    width: 62%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 32px;
+}
+
+.hero .container .dashboard .titles .deals{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.hero .container .dashboard .public{
+    width: 95%;
+    height: 400px;
+    display: flex;
+
+}
+
+.hero .container .dashboard .public .block-01{
+    width: 65%;
+    height: 100%;
+    border-radius: 25px;
+    display:flex;
+    flex-direction: row;
+}
+
+.hero .container .dashboard .public .block-02{
+    width: 35%;
+    height: 100%;
+    background-image: linear-gradient(to right,#0b9312 , #6ec202);
+
+    border-radius: 25px;
+    margin-left: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .container .dashboard .public .block-01 .sec-01{
+    width: 54%;
+    height: 100%;
+    background: #1f1e24;
+    border-bottom-left-radius:25px ;
+    border-top-left-radius:25px ;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.hero .container .dashboard .public .block-01 .sec-01{
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.hero .container .dashboard .public .block-01 .sec-01 h1{
+    font-size: 30px;
+    margin-left: 70px;
+    margin-top: 80px;
+}
+.hero .container .dashboard .public .block-01 .sec-01 h3{
+    font-size: 24px;
+    margin-left: 70px;
+    margin-top: -9px;
+
+}
+.hero .container .dashboard .public .block-01 .sec-01 p{
+    font-size: 15px;
+    color: #a6a6a6;
+    margin-left: 70px;
+    margin-top: -2px;
+}
+
+.hero .container .dashboard .public .block-01 .sec-01 .button{
+    background: #555557 ;
+    display: flex;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin-left: 70px;
+    margin-top: 40px;
+    border-bottom: 4px solid black;
+    cursor: pointer;
+
+}
+
+
+
+.hero .container .dashboard .public .block-01 .sec-02{
+    width: 46%;
+    height: 100%;
+    border-bottom-right-radius:25px ;
+    border-top-right-radius:25px ;
+
+}
+
+.hero .container .dashboard .public .block-01 .sec-02 img{
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius:25px ;
+    border-top-right-radius:25px ;
+
+}
+
+.hero .container .dashboard .public .block-02 .sec-01 img{
+    width: 400px;
+    height: 170px;
+
+}
+
+.hero .container .dashboard .public .block-02 .sec-02{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .container .dashboard .public .block-02 .sec-02 h2{
+    font-family: 'Rubik', sans-serif;
+    color: #ffff;
+    width: 82%;
+    font-size: 23px;
+    margin-top: 55px;
+}
+
+.hero .container .dashboard .public .block-02 .sec-02 p{
+    font-family: 'Rubik', sans-serif;
+    color: #ffff;
+    font-size: 13px;
+    width: 82%;
+    margin-top:-5px;
+    
+}
+
+.hero .container .dashboard .titles-footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 38px;
+}
+
+.hero .container .dashboard  .titles-footer .played{
+    height:100%;
+    width: 50%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    margin-left: 30px;
+
+}
+
+.hero .container .dashboard .titles-footer .data{
+    height:50px;
+    width: 30%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left:175px ;
+
+
+}
+
+/*----------------FOOOTER GAMES--------------*/
+
+.hero .container .dashboard .games{
+    width: 100%;
+    height: 260px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin-top: -15px;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.hero .container .dashboard .games .game-01{
+    width: 170px;
+    height: 100%;
+    margin-left: 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.hero .container .dashboard .games .game-01 img{
+    width: 170px;
+    height: 230px;
+    border-radius: 12px;
+}
+
+.hero .container .dashboard .games .game-01 span{
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 10px;
+
+}
+
+.hero .container .dashboard .games .popular-games {
+    width: 320px;
+    height: 88.5%;
+    margin-left: 25px;
+    border-radius: 12px;
+}
+
+.hero .container .dashboard .games .popular-games img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
